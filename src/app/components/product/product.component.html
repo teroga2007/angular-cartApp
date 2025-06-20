@@ -1,0 +1,13 @@
+<div class="card bg-base-100 shadow-sm border border-primary/30 mb-6">
+  <figure>
+    <img src="https://placehold.co/400x300/19362D/000000" alt="Shoes" />
+  </figure>
+  <div class="card-body">
+    <h2 class="card-title">{{product.name}}</h2>
+    <p>{{product.description}}</p>
+    <p>{{product.price | currency:'USD':'symbol':'1.2-2'}}</p>
+    <div class="card-actions justify-start">
+      <button class="btn btn-primary" (click)="onAddToCart(product)">Add to Cart</button>
+    </div>
+  </div>
+</div>

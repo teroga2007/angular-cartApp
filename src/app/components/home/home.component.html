@@ -1,0 +1,13 @@
+<div class="hero bg-base-200 min-h-screen">
+  <div class="hero-content text-center">
+    <div class="max-w-md">
+      <h1 class="text-5xl font-bold">Welcome to my Angular App</h1>
+      <p class="pt-6">
+        For now this app is just a catalogue of products, add some items to your cart.
+      </p>
+      <lottie-player class="flex mx-auto" src="cart.json" background="transparent" speed="0.4"
+        style="width: 200px; height: 200px;" loop autoplay></lottie-player>
+      <button class="btn btn-primary" [routerLink]="'/catalogue'">Go to Catalogue</button>
+    </div>
+  </div>
+</div>

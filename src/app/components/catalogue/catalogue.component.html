@@ -1,0 +1,7 @@
+<h1 class="text-primary text-4xl font-black my-6">Products Catalogue</h1>
+
+<div class="grid grid-cols-3 gap-4">
+  @for (product of products; track $index) {
+  <product [product]="product" (addToCartEventEmitter)="onAddToCart($event)" />
+  }
+</div>
